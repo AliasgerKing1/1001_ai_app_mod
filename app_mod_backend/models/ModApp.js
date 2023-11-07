@@ -20,5 +20,9 @@ const ModApp = mongoose.Schema({
         type : String,
         default : ""
     },
+    image : {
+        type : Array,
+        default : []
+    }
 })
 module.exports = mongoose.model("mod_app", ModApp);
