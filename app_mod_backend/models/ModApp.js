@@ -12,6 +12,7 @@ const ModApp = mongoose.Schema({
         default : false
     },
     share_link : String,
+    banner_image : String,
     description : {
         type : String,
         default : ""
@@ -27,6 +28,6 @@ const ModApp = mongoose.Schema({
     comment : {
         type : Array,
         default : []
-    }
+    },
 })
 module.exports = mongoose.model("mod_app", ModApp);
