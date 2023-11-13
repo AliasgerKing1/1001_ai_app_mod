@@ -66,6 +66,11 @@ routes.get("/:id", async (req,res)=> {
         res.send(result)
 })
 
+routes.get("/cat", async (req,res)=> {
+        let result = await ModApp.find({category : id})
+        res.send(result)
+})
+
 
 routes.put('/:id', upload.single('image'), async (req,res) => {
   let id = req.params.id;
